@@ -64,3 +64,9 @@ catchThemAll.addEventListener("click", () => {
 //   const spriteUrl = data.sprites.other["official-artwork"].front_default;
 //   pokemon.setAttribute("src", spriteUrl);
 // });
+
+document.addEventListener("mousemove", (event) => {
+  const circle = document.getElementById("circle");
+  circle.style.left = (event.pageX - 16) + "px";
+  circle.style.top = (event.pageY - 16) + "px";
+});
