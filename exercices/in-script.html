@@ -6,7 +6,7 @@
 </head>
 <body>
     <style>
-        .red { color: red; }
+        .biggerFont { font-size: 2em; }
     </style>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -25,7 +25,7 @@
                 v-for="(name, index) in names"
                 :key="`names-${name}`"
                 @click="removeName(name)"
-                :class="{ red: names.filter(element => element === name).length > 1 }"
+                :class="{ biggerFont: names.filter(element => element === name).length > 1 }"
             >
                 {{ `${name}` }}
             </li>

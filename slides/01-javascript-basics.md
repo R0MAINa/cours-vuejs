@@ -2,7 +2,6 @@
 marp: true
 paginate: true
 footer: Adrien Bouyssou (macdrien.github.io)
-transition: push
 ---
 
 # Rappel JavaScript
