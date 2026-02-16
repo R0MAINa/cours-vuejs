@@ -55,7 +55,7 @@ export default {
 
 ---
 
-## Déclarer un composant - Options API
+## Déclarer un composant - Options API (suite)
 
 ```javascript
 export default {
@@ -71,9 +71,28 @@ export default {
 };
 ```
 
+--- 
+
+## Déclarer un composant - Composition API
+
+```javascript
+import { ref } from 'vue';
+
+export default {
+  setup() {
+    const count = ref(0)
+    return { count };
+  },
+  template: `
+  <p>{{ count }}</p>
+  <button @click="count++">Increment</button>
+  `
+}
+```
+
 ---
 
-## Déclarer un composant - SFC
+## Déclarer un composant - Composition API SFC
 
 Single File Component.  
 **Uniquement avec un outil de build.**
