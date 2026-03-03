@@ -27,11 +27,11 @@ footer: Adrien Bouyssou (macdrien.github.io)
 
 ```javascript
 const switcher = document.getElementById("switcher");
-switcher.setAttribute("disabled", tue);
+switcher.setAttribute("disabled", true);
 ```
 
 ```javascript
-const elements = document.getElementsByTagName("p");
+const elements = document.getElementsByTagName("p"); // [{}, {}, ...]
 for (let element of elements) {
   const currentColor = element.style.color;
   element.style.color = currentColor === "red" ? "black" : "red";
@@ -82,9 +82,7 @@ import { getRandomInt } from "../utils.js";
 
 ```javascript
 // utils.js
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 export { getRandomInt };
 ```
@@ -133,7 +131,7 @@ console.log("Hello from the text world"); // Print
 fetch(`https://pokeapi.co/api/v2/pokemon/${id}`) // Async
   .then(
     (response) => response.json(), // Parsing async too
-    (error) => console.log(error),
+    (error) => console.error(error),
   )
   .then((data) => {
     const spriteUrl = data.sprites.other["official-artwork"].front_default;
@@ -163,6 +161,6 @@ try {
   const spriteUrl = data.sprites.other["official-artwork"].front_default;
   pokemon.setAttribute("src", spriteUrl);
 } catch (error) {
-  console.log(error);
+  console.error(error);
 }
 ```

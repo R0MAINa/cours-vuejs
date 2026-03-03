@@ -25,7 +25,7 @@ footer: Adrien Bouyssou (macdrien.github.io)
 
 1. Révision des bases
 2. Découverte du développement frontend moderne avec VueJS
-3. Appréhender un projet frontend complet
+3. Travailler dans un environnement VueJS complet
 
 ## Typescript
 
@@ -35,12 +35,14 @@ On ne l'abordera pas pour rester "simple" et s'économiser du temps.
 
 ## Organisation
 
+Sur 5 semaines :
+
 1. Révision des bases de JS
 2. Introduction à VueJS
 
 - Première évaluation
 
-4. Initiation à un projet VueJS et son environnement
-5. Programmation dans un cas réel simplifié
+3. Initiation à un projet VueJS et son environnement
+4. Programmation dans un cas réel simplifié
 
 - Seconde évaluation

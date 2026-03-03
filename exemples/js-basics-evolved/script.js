@@ -59,14 +59,8 @@ catchThemAll.addEventListener("click", () => {
 //   }
 
 //   const id = getRandomInt(151) + 1;
-//   const response =await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+//   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
 //   const data = await response.json();
 //   const spriteUrl = data.sprites.other["official-artwork"].front_default;
 //   pokemon.setAttribute("src", spriteUrl);
 // });
-
-document.addEventListener("mousemove", (event) => {
-  const circle = document.getElementById("circle");
-  circle.style.left = (event.pageX - 16) + "px";
-  circle.style.top = (event.pageY - 16) + "px";
-});
