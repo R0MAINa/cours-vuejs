@@ -2,10 +2,8 @@
     display: flex;
 }
 
-.buttons {
+.games {
     width: 50vw;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .content {
