@@ -12,3 +12,7 @@
     background-color: red;
     width: 50vw;
 }
+
+.hidden {
+    visibility: hidden;
+}
